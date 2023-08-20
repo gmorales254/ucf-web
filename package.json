@@ -1,0 +1,23 @@
+{
+  "name": "ucf-web",
+  "version": "1.0.0",
+  "description": "Website for UCF team by Toto Llanes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmorales254/ucf-web.git"
+  },
+  "keywords": [
+    "website",
+    "tennis"
+  ],
+  "author": "Toto Llanes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmorales254/ucf-web/issues"
+  },
+  "homepage": "https://github.com/gmorales254/ucf-web#readme"
+}
