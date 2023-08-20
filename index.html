@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>UCF Tennis</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg style="background-color:black">
+  <div class="container-fluid">
+     <div class="logo-container mx-auto">
+      <a href="https://www.ucf.edu/" target=_blank><img src="UCF_Knights_logo.svg.png" alt="UCF Logo"/></a>
+    </div>
+    <a class="nav-link active" href="#" style="color:#a0a195">HOME</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"> <!-- basicamente toda esta pieza de codgo ayuda a adaptar la navbar a cualquier tamaño de pantalla-->
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#" style="color:#a0a195">ROSTER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"style="color:#a0a195">SCHEDULE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"style="color:#a0a195">ACADEMICS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#"style="color:#a0a195">NEWS</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="text-center">
+<h1 style="color:#a0a195";>UCF TENNIS</h1>
+<p style="color:#a0a195">LET´S GO KNIGHTS!</p>
+</div>  
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2 style="color:#a0a195;margin-top: 50px;">Login</h2>
+          <form class="register-form" action="#" method="post">
+            <label for="email" class="form-label" style="color:#a0a195">Email address:</label>
+            <input type="text" class="form-control" id="email" name="email" required>
+        
+            <label for="password" class="form-label" style="color:#a0a195">Password:</label>
+            <input type="text" class="form-control" id="password" name="password" required>
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-2 pt-0"></legend>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <label class="form-check-label" for="gridRadios1" style="color:#a0a195">
+                    Remember me
+                  </label>
+              </div>
+            </fieldset>
+            <button type="submit" class="btn btn-dark">Sign in</button>
+          </form>  
+        </div> 
+        <div class="col-md-6">
+        <h2 style="color: #a0a195;margin-top: 50px;">Register</h2>
+        <form class="register-form" action="#" method="post">
+          <label for="name" class="form-label" style="color:#a0a195">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+      
+          <label for="lastName" class="form-label" style="color:#a0a195">Last name:</label>
+          <input type="text" class="form-control" id="lastName" name="lastName" required>
+      
+          <label for="ucfId" class="form-label" style="color:#a0a195">UCF ID:</label>
+          <input type="text" class="form-control" id="ucfId" name="ucfId" required>
+          <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label" style="color:#a0a195">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+          <div class="row g-2">
+            <div>
+              <label for="address" class="form-label" style="color:#a0a195">Address</label>
+              <input type="text" class="form-control" placeholder="City" aria-label="City">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="State" aria-label="State">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Zip" aria-label="Zip">
+          </div>
+        </div>
+          <label for="team" class="form-label" style="color:#a0a195">Team:</label>
+          <select id="team" class="form-select" name="team">
+            <option value="men´sTennis">Men´s Tennis</option>
+            <option value="women´sTennis">Women´s Tennis</option>
+          </select>         
+          <div class="mt-3"> <!-- (mt-) para agregra un margen arriba del boton, y mb- para margen por debajo)-->
+          <button class="btn btn-dark" onclick="getForm()">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>  
+  </section>
+  
+  <script src="index.js"></script>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  
+</body>
+
+</html>
